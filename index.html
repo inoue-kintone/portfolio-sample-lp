@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>LP制作ポートフォリオ</title>
+        <meta name="description" content="LP制作・コーディングの副業案件向けポートフォリオ。スピーディーに成果を出すランディングページ制作を提供します。"/>
+        <meta name="generator" content="ChatGPT + Inoue Tatsushi"/>
+        <meta name="theme-color" content="#0ea5e9"/>
+
+        <!-- Open Graph / Twitter -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="LP制作ポートフォリオ – Inoue Tatsushi"/>
+        <meta property="og:description" content="高速表示・高CVのLPを制作。コード品質・運用しやすさにも配慮。"/>
+        <meta property="og:image" content="/og-image.jpg"/>
+        <meta property="og:url" content="https://example.com"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+
+        <!-- Fallback favicon (you can replace these files) -->
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230ea5e9'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-size='54' fill='white' font-family='system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, sans-serif'%3EIT%3C/text%3E%3C/svg%3E"/>
+
+        <!-- JSON-LD (Person + WebSite) -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Inoue Tatsushi",
+                "jobTitle": "LPコーダー / フロントエンド",
+                "url": "https://example.com",
+                "sameAs": ["https://x.com/your_handle", "https://github.com/your_handle"]
+            }
+        </script>
+        <link rel="stylesheet" href="base.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="brand">
+                        <span class="badge" aria-label="site logo">IT</span>
+                        <div>
+                            <small class="muted">LP制作 / フロントエンド</small>
+                        </div>
+                    </div>
+                    <div class="navlinks">
+                        <a href="#works">制作実績</a>
+                        <a href="#pricing">料金</a>
+                        <a href="#contact">お問い合わせ</a>
+                        <button class="btn ghost" id="themeBtn" aria-label="テーマ切替">🌗</button>
+                        <a class="btn" href="#contact">無料相談</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <!-- Hero -->
+            <section class="hero">
+                <div>
+                    <span class="eyebrow fade-up">Core Web Vitals / 高速表示 / 運用しやすいコード</span>
+                    <h1 class="fade-up d2">売上に直結する<strong>LP制作</strong>、<br>最短で成果にフォーカス。</h1>
+                    <p class="fade-up d3">JavaScriptとHTML/CSSでのコーディングはもちろん、UIの細部まで丁寧に。CV設計・ABテスト・計測タグの導入までまとめて対応します。</p>
+                    <div class="cta fade-up d4">
+                        <a class="btn" href="#works">実績を見る</a>
+                        <a class="btn ghost" href="#pricing">料金表</a>
+                    </div>
+                    <div class="kpis" style="margin-top:18px">
+                        <div class="kpi">
+                            <div class="n">98+</div>
+                            <div class="muted">Lighthouse Performance</div>
+                        </div>
+                        <div class="kpi">
+                            <div class="n">7日</div>
+                            <div class="muted">最短初回納品</div>
+                        </div>
+                        <div class="kpi">
+                            <div class="n">20%↑</div>
+                            <div class="muted">平均CVR改善</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 style="margin:0 0 10px">できること</h3>
+                    <div class="list">
+                        <span class="chip">静的LP（Lightsail配信）</span>
+                        <span class="chip">SPA/MPA</span>
+                        <span class="chip">モバイル最適化</span>
+                        <span class="chip">構造化データ</span>
+                        <span class="chip">LCP最適化</span>
+                        <span class="chip">ABテスト導入</span>
+                        <span class="chip">GA4/GTM</span>
+                        <span class="chip">フォーム最適化</span>
+                        <span class="chip">アクセシビリティ</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services short -->
+            <section class="section">
+                <h2>制作ポリシー</h2>
+                <div class="grid cards">
+                    <article class="card">
+                        <h3>高速表示</h3>
+                        <p class="muted">画像の適正化、遅延読み込み、クリティカルCSSなどを標準対応。LCP/CLSを意識した構成。</p>
+                    </article>
+                    <article class="card">
+                        <h3>伝わる情報設計</h3>
+                        <p class="muted">コピーとビジュアルの優先順位設計。CTA配置とファーストビューでの価値訴求。</p>
+                    </article>
+                    <article class="card">
+                        <h3>運用しやすいコード</h3>
+                        <p class="muted">コンポーネント思考のHTML・BEM/utilityの併用で保守性を確保。コメント・README付属。</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Works -->
+            <section id="works" class="section">
+                <h2>制作実績（ダミー）</h2>
+                <div class="projects">
+                    <!-- Project 1 -->
+                    <article class="project">
+                        <div class="media" role="img" aria-label="SaaS LP mock">
+                            <!-- inline SVG placeholder -->
+                            <svg
+                                viewbox="0 0 800 450"
+                                width="100%"
+                                height="100%"
+                                preserveaspectratio="xMidYMid slice"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <lineargradient id="g1" x1="0" x2="1">
+                                        <stop offset="0%" stop-color="#0ea5e9"/>
+                                        <stop offset="100%" stop-color="#22d3ee"/>
+                                    </lineargradient>
+                                </defs>
+                                <rect width="800" height="450" fill="#0b1220"/>
+                                <rect
+                                    x="40"
+                                    y="40"
+                                    width="720"
+                                    height="140"
+                                    rx="14"
+                                    fill="url(#g1)"
+                                    opacity="0.8"/>
+                                <rect x="40" y="220" width="340" height="80" rx="10" fill="#16233b"/>
+                                <rect x="420" y="220" width="340" height="80" rx="10" fill="#16233b"/>
+                                <rect x="40" y="320" width="300" height="20" rx="6" fill="#22314d"/>
+                                <rect x="40" y="350" width="240" height="20" rx="6" fill="#22314d"/>
+                            </svg>
+                        </div>
+                        <div class="body">
+                            <div class="tag">SaaS</div>
+                            <h3>CVR +24%の改善LP</h3>
+                            <p class="muted">課題ヒアリング→ペルソナ定義→見出し/CTA整理→構造化データ→ABテストで改善。</p>
+                            <div class="cta">
+                                <button class="btn ghost" data-case="1">ケーススタディ</button>
+                                <a class="btn" href="#contact">見積もり</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project 2 -->
+                    <article class="project">
+                        <div class="media" role="img" aria-label="EC LP mock">
+                            <svg
+                                viewbox="0 0 800 450"
+                                width="100%"
+                                height="100%"
+                                preserveaspectratio="xMidYMid slice"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="800" height="450" fill="#0b1220"/>
+                                <circle cx="170" cy="200" r="100" fill="#16233b"/>
+                                <circle cx="400" cy="200" r="100" fill="#16233b"/>
+                                <circle cx="630" cy="200" r="100" fill="#16233b"/>
+                                <rect x="260" y="340" width="280" height="50" rx="12" fill="#0ea5e9"/>
+                            </svg>
+                        </div>
+                        <div class="body">
+                            <div class="tag">EC</div>
+                            <h3>LP×広告で売上1.6倍</h3>
+                            <p class="muted">商品理解を深める長文セクション＋比較表で訴求。広告LPの最適化にも対応。</p>
+                            <div class="cta">
+                                <button class="btn ghost" data-case="2">ケーススタディ</button>
+                                <a class="btn" href="#contact">見積もり</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Pricing -->
+            <section id="pricing" class="section">
+                <h2>料金プラン（目安）</h2>
+                <div class="pricing">
+                    <div class="price">
+                        <h3>テンプレLP</h3>
+                        <div class="yen">¥80,000〜</div>
+                        <div class="line">1ページ / 5セクション</div>
+                        <div class="line">レスポンシブ / 計測タグ</div>
+                        <div class="line">納期 7〜10日</div>
+                        <a class="btn" href="#contact">相談する</a>
+                    </div>
+                    <div class="price" style="border-color:var(--accent)">
+                        <h3>カスタムLP</h3>
+                        <div class="yen">¥150,000〜</div>
+                        <div class="line">要件定義 / ワイヤー</div>
+                        <div class="line">構造化データ / ABテスト</div>
+                        <div class="line">納期 10〜21日</div>
+                        <a class="btn" href="#contact">相談する</a>
+                    </div>
+                    <div class="price">
+                        <h3>運用プラン</h3>
+                        <div class="yen">¥25,000/月〜</div>
+                        <div class="line">改善提案 / 月次レポート</div>
+                        <div class="line">文言・画像差替え対応</div>
+                        <div class="line">ABテスト設計</div>
+                        <a class="btn" href="#contact">相談する</a>
+                    </div>
+                </div>
+                <p class="muted" style="margin-top:10px">※ 具体的な要件・素材有無・公開環境により変動します。まずはお気軽にご相談ください。</p>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="section">
+                <h2>お問い合わせ</h2>
+                <div class="contact">
+                    <form id="contactForm" class="card" aria-labelledby="contact-heading">
+                        <div style="display:grid; gap:8px">
+                            <div>
+                                <label for="name">お名前</label>
+                                <input id="name" name="name" autocomplete="name" required="required"/>
+                            </div>
+                            <div>
+                                <label for="email">メールアドレス</label>
+                                <input
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    autocomplete="email"
+                                    required="required"/>
+                            </div>
+                            <div>
+                                <label for="budget">ご予算（任意）</label>
+                                <input id="budget" name="budget" placeholder="例）15万円程度"/>
+                            </div>
+                            <div>
+                                <label for="message">ご相談内容</label>
+                                <textarea id="message" name="message" rows="6" required="required"></textarea>
+                            </div>
+                            <button class="btn" type="submit">送信</button>
+                            <small class="muted">※ 静的運用向けに
+                                <code>mailto:</code>
+                                送信（またはFormspree等へ差替可）</small>
+                        </div>
+                    </form>
+                    <aside class="card">
+                        <h3>対応範囲</h3>
+                        <ul class="muted">
+                            <li>HTML/CSS/JS（軽量・高速）</li>
+                            <li>GA4/GTM/Meta広告計測</li>
+                            <li>SEO（構造化データ、OGP）</li>
+                            <li>LightSail/Apache/Nginx 配信</li>
+                            <li>簡易更新ドキュメント付属</li>
+                        </ul>
+                        <h3>連絡先</h3>
+                        <p class="muted">Mail:
+                            <a href="mailto:hello@example.com">hello@example.com</a><br>GitHub:
+                            <a href="https://github.com/your_handle" target="_blank" rel="noreferrer">your_handle</a>
+                        </p>
+                        <h3>ダウンロード</h3>
+                        <p>
+                            <a class="btn ghost" href="#" id="dlZip">このページをZIPで保存</a>
+                        </p>
+                    </aside>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div
+                    style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap">
+                    <small>©
+                        <span id="y"></span>
+                        Inoue Tatsushi</small>
+                    <div style="display:flex; gap:12px; align-items:center">
+                        <a href="#" class="muted">プライバシー</a>
+                        <a href="#" class="muted">特定商取引法に基づく表記</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <dialog
+            id="caseModal"
+            style="max-width:min(860px,92vw); border:none; border-radius:16px; background:var(--panel); color:var(--text); padding:0">
+            <div
+                style="padding:18px 18px 6px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid color-mix(in oklab, var(--text), transparent 86%)">
+                <strong>ケーススタディ</strong>
+                <button class="btn ghost" id="closeModal" aria-label="閉じる">閉じる</button>
+            </div>
+            <div style="padding:18px" id="caseBody"></div>
+        </dialog>
+
+        <script>
+            // Year
+            document
+                .getElementById('y')
+                .textContent = new Date().getFullYear();
+
+            // Theme toggle (persist)
+            const key = 'theme';
+            const root = document.documentElement;
+            const themeBtn = document.getElementById('themeBtn');
+            const setTheme = (t) => {
+                if (t === 'light') {
+                    root.setAttribute('data-theme', 'light');
+                } else {
+                    root.removeAttribute('data-theme');
+                }
+                localStorage.setItem(key, t);
+            };
+            setTheme(localStorage.getItem(key) || (
+                matchMedia('(prefers-color-scheme: light)').matches
+                    ? 'light'
+                    : 'dark'
+            ));
+            themeBtn.addEventListener('click', () => setTheme(
+                root.getAttribute('data-theme') === 'light'
+                    ? 'dark'
+                    : 'light'
+            ));
+
+            // Case study modal (sample content)
+            const modal = document.getElementById('caseModal');
+            const body = document.getElementById('caseBody');
+            const closeModal = document.getElementById('closeModal');
+            closeModal.addEventListener('click', () => modal.close());
+            document
+                .querySelectorAll('[data-case]')
+                .forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const n = btn.getAttribute('data-case');
+                        body.innerHTML = n === '1'
+                            ? `<h3>SaaS：CVR +24%の改善</h3>
+             <p class="muted">ヒアリングからCTAまでの導線を短縮。LCPを2.6s→1.4sへ最適化、構造化データ追記で検索流入も改善。</p>
+             <ul><li>画像のWebP化と遅延読み込み</li><li>クリティカルCSS抽出</li><li>CTAファーストビュー固定</li><li>ABテスト（見出し3案）</li></ul>`
+                            : `<h3>EC：売上1.6倍</h3>
+             <p class="muted">比較表とFAQで不安を解消。レビューの社会的証明を追加し購入率を底上げ。</p>
+             <ul><li>キャンペーン用LPを広告毎にバリアント化</li><li>メタ計測タグ正確化</li><li>フォーム離脱原因のUI改善</li></ul>`;
+                        modal.showModal();
+                    });
+                });
+
+            // Contact form → mailto fallback (static hosting friendly)
+            const form = document.getElementById('contactForm');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const data = new FormData(form);
+                const subject = encodeURIComponent(`[LP相談] ${data.get('name')} 様`);
+                const bodyTxt = encodeURIComponent(
+                    `お名前: ${data.get('name')}\nメール: ${data.get('email')}\nご予算: ${data.get('budget') || ''}\n---\n${data.get('message')}`
+                );
+                // TODO: ここを Formspree / 自前API に差し替え可能
+                location.href = `mailto:hello@example.com?subject=${subject}&body=${bodyTxt}`;
+            });
+
+            // Zip download (client-side) for quick handoff
+            // NOTE: For real use, provide repo link. Here we build a minimal ZIP in
+            // browser.
+            document
+                .getElementById('dlZip')
+                .addEventListener('click', async (e) => {
+                    e.preventDefault();
+                    const {default: JSZip} = await import (
+                        'https://cdn.jsdelivr.net/npm/jszip@3.10.1/+esm'
+                    );
+                    const zip = new JSZip();
+                    const html = document.documentElement.outerHTML;
+                    zip.file('index.html', html);
+                    const blob = await zip.generateAsync({type: 'blob'});
+                    const a = document.createElement('a');
+                    a.href = URL.createObjectURL(blob);
+                    a.download = 'lp-portfolio.zip';
+                    a.click();
+                    URL.revokeObjectURL(a.href);
+                });
+        </script>
+
+        <!-- GA4（必要なら有効化） <script async
+        src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script> <script>
+        window.dataLayer = window.dataLayer || []; function
+        gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config',
+        'G-XXXXXXX'); </script>-->
+    </body>
+</html>
