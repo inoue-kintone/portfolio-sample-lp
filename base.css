@@ -1,10 +1,10 @@
 :root {
-    --bg: #b6cae2;
+    --bg: #0f1d2d;
     --panel: #00133f;
     /* slate-900 */
     --text: #e5e7eb;
     /* slate-200 */
-    --muted: #4c535e;
+    --muted: #deebff;
     /* slate-400 */
     --accent: #0ea5e9;
     /* sky-500 */
@@ -99,7 +99,7 @@ nav {
 .hero h1 {
     font-size: clamp(28px, 6vw, 42px);
     line-height: 1.05;
-    margin: 10px 0 14px;
+    margin: 20px 0 14px;
 }
 .eyebrow {
     display: inline-flex;
@@ -176,8 +176,8 @@ nav {
     padding: 60px 0;
 }
 .section h2 {
-    font-size: 26px;
-    margin: 0 0 16px;
+    font-size: 30px;
+    margin: 0 0 20px;
 }
 .projects {
     display: grid;
@@ -264,6 +264,60 @@ label {
 footer {
     padding: 36px 0;
     color: var(--muted);
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 30;
+}
+.nav-toggle span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+@media (max-width: 800px) {
+    .nav-toggle {
+        display: flex;
+    }
+    .navlinks {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: var(--panel);
+        border-radius: 0 0 16px 16px;
+        box-shadow: 0 8px 32px -8px rgba(0,0,0,0.12);
+        flex-direction: column;
+        gap: 0;
+        width: 220px;
+        padding: 18px 0;
+        display: none;
+        z-index: 20;
+    }
+    .navlinks.open {
+        display: flex;
+    }
+    nav {
+        position: relative;
+    }
+    .navlinks a, .navlinks button {
+        padding: 14px 24px;
+        width: 100%;
+        text-align: left;
+        border-radius: 0;
+        margin: 0;
+    }
 }
 
 /* Responsive */
