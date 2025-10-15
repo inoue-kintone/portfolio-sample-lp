@@ -24,8 +24,7 @@
 * {
     box-sizing: border-box;
 }
-body,
-html {
+body,html {
     height: 100%;
     transition: background 0.5s cubic-bezier(.4,0,.2,1), color 0.5s cubic-bezier(.4,0,.2,1);
 }
@@ -71,6 +70,12 @@ nav {
     border-radius: 12px;
     background: var(--panel);
     border: 1px solid color-mix(in oklab, var(--text), transparent 85%);
+}
+.logo {
+    height: 20px;
+    width: 20px;
+    border-radius: 6px;
+    object-fit: cover;
 }
 .navlinks {
     display: flex;
